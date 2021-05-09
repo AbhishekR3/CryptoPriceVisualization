@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:lightblue;">
+    <title> Bitcoin Prices </title>
+    <head>
+        <script src="https://d3js.org/d3.v5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    </head>
+    <style>
+        title {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        circle {fill: red}
+        .line-path{
+            fill: none;
+            stroke: green;
+            stroke-width: 1;
+        }
+
+        div.titler {
+            position: relative;
+            bottom: 1000px;
+            right: -500px;
+            transform: rotate(0deg);
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.yaxis {
+            position: relative;
+            bottom: 1350px;
+            right: 900px;
+            transform: rotate(270deg);
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+
+    <body>
+        <h1> <center> History of Bitcoin Prices </center> </h1>
+        <hr />
+        <p><span style="font-weight: 400;">Feb 6th, 2014 - Mt. Gox, one of the largest bitcoin exchanges handling nearly 70% of bitcoin trading</span><span style="font-weight: 400;">, suspended withdrawals citing technical issues. By the end of the month, Mt. Gox had filed for bankruptcy protection in Japan amid reports that 744,000 bitcoins had been stolen.</span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Feb 6 2014.png" alt="Feb 6th, 2014" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">December 11th, 2014 &rarr; Microsoft becomes one of the first major tech companies to support the payment of Bitcoin</span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Dec 11 2014.png" alt="Dec 11th, 2014" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">January 21, 2015 &rarr; Coinbase gets a Series C Funding at</span><span style="font-weight: 400;"> $75 million at a post-money valuation of $490 million</span></p>
+        <p><img style="width: 800px; height: 800px;" src="Jan 21 2015.png" alt="Jan 21st, 2015" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">January 2017 &rarr; NHK reported the number of online stores accepting bitcoin in Japan had </span><a href="https://web.archive.org/web/20170110015417/http://www3.nhk.or.jp/news/html/20170109/k10010833281000.html">increased 4.6 times over the past year</a>. </p>
+        <p> BitPay CEO Stephen Pair declared the company's transaction rate <a href="https://medium.com/@spair/the-bitcoin-fee-market-4df1857d12b7">grew 3&times;</a> from January 2016 to February 2017, and explained usage of bitcoin is growing in B2B supply chain payments.</p>
+        <hr />
+        <p><span style="font-weight: 400;">October 12th, 2017 &rarr; </span><span style="font-weight: 400;">Price broke $5,000 for the first time</span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Oct 12 2017.png" alt="Oct 12th, 2017" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">December 15, 2017 &rarr; Price reaches $17436.60 </span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Dec 15 2017.png" alt="Dec 15th, 2017" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">December 16, 2017 &rarr; $19166.98 &rarr; Price rose 5% in 24 hours with its value being up 1824% since January 1st, 2017, to reach a new all-time high</span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Dec 16 2017.png" alt="Dec 16th, 2017" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">December 21st, 2017 &rarr; $14182.46 &rarr; Price lost one third of its value in 24 hours.</span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Dec 21 2017.png" alt="Dec 21th, 2017" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">February 5th, 2018 &rarr; $6332.37&rarr; Price dropped by nearly 50% in 16 days </span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Feb 5 2018.png" alt="Feb 5th, 2018" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">November 14th, 2018 &rarr; $5524.80 &rarr; Bitcoin Bubble pops and bitcoin market cap <a href = "https://www.cnbc.com/2018/11/15/bitcoin-market-cap-falls-below-100-billion-for-first-time-since-2017.html"> falls below $100 billion</a> for the first time since October 2017.</span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Nov 14 2018.png" alt="Nov 14th, 2018" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">March 16, 2020 &rarr; 4944.70 &rarr; Price dropped by 39% third in 24 hours early during the Covid-19 pandemic.</span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Mar 16 2020.png" alt="Mar 16th, 2020" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">July 27th, 2020 &rarr; $11187.78 &rarr; Price recovered value lost in COVID- related crash</span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Jul 27 2020.png" alt="Jul 27th, 2020" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">November 24th, 2020 &rarr; $19045.74 &rarr; All-time 3 year high</span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Nov 24 2020.png" alt="Nov 24th, 2020" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">November 30th, 2020 &rarr; $19382.36 &rarr; All-time high of $19382.36</span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Nov 30 2020.png" alt="Nov 30th, 2020" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">December 15th, 2020 &rarr; $19443.48 &rarr; Bitcoin reaches all-time high $19443.48</span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Dec 15 2020.png" alt="Dec 15 2020" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">Jan 8th, 2021 &rarr; $40519.45 &rarr; Bitcoin price crossed 40,000 for the first time</span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Jan 8 2021.png" alt="Jan 8 2021" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">Jan 21st, 2021 &rarr; $30606.18 &rarr; Prices briefly fell by 26%</span></p>
+        <p>&nbsp;</p>
+        <p><img style="width: 800px; height: 800px;" src="Jan 21 2021.png" alt="Jan 21 2021" /></p>
+        <hr />
+        <p><span style="font-weight: 400;">March 13, 2021 &rarr; $60743.04 &rarr; Prices nearly doubled in value within 2 months. </span></p>
+        <p><img style="width: 800px; height: 800px;" src="March 13 2021.png" alt="March 13 2021" /></p>
+        <hr />
+        <p> Interactive visualization of Bitcoin Prices</p>
+        <svg width='1200' height='1000'></svg>
+        <script src="BitcoinPrices.js"></script>
+        <div class="yaxis">
+            Closing Price ($USD)
+        </div>
+
+        <div class="titler">
+            Price of Cryptocurrency
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:lightblue;">
+    <head>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+        <meta charset="UTF-8">
+        <title>CryptoNetwork Bar Chart</title>
+    </head>
+    <body>
+        <h1> <center> Cryptocurrency Networks </center> </h1>
+        <p> Cryptocurrency is built on a network/system that is used to transfer cryptocurrencies and tokens. </p>
+        <p> Certain cryptocurrencies use their own network, while others use popular networks. </p>
+        <p> Ethereum is the most common network with over <a href = "https://www.coindesk.com/which-crypto-dapps-are-on-ethereum"> 3000 decentralized apps</a> </p>
+        <p> If multiple cryptocurrencies use the same network/system, there are its own pros and cons. </p>
+        <p> A pro is that multiple cryptocurrency will share a community and discuss and improve the network and help its users as well. </p>
+        <p> A con is that the loopholes are applicable to multiple cryptocurrencies, which create bigger problems. </p>
+        <p> This is what nearly happened when <a href = "https://www.coindesk.com/55m-hack-ethereum-down"> a hack nearly brought Ethereum's network down</a>.</p>
+        <svg width='1000' height='1050'></svg>
+        <script src="CryptoNetwork.js"></script>
+        <p> FYI: There is a reason there is negative values for the closing price.</p>
+        <p> When a value is less than 1, but greater than 0, the log of that value will be a negative number. </p>
+        <p> For example: OXT has a closing price of 0.445886246, the log of this value is approximately -0.351. </p>
+    </body>
+</html>
