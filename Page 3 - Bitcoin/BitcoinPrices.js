@@ -39,7 +39,7 @@ var render = data => {
         .attr('class', 'title')
         .attr("font-size", 20)
         .attr('y', innerHeight+50)
-        .attr('x', 370)
+        .attr('x', 450)
         .attr('font-family', "Arial, Helvetica, sans-serif")
         .text('Date');
 
