@@ -6,7 +6,7 @@ Dataset: https://www.coindesk.com/coindesk20
 
 Description: The project discusses about cryptocurrency prices and what might affect them. The visualizations show comparisons between prices of cryptocurrencies, networks used by the cryptocurrencies, history of Bitcoin, and cryptocurrencies as a method of investment.
 
-Programming Languages used: Javascript, HTML
+Programming Languages used: Javascript, Tableau, HTML
 Libraries: D3.js (v4, v6), D3.js color legend (https://d3-legend.susielu.com/)
 
 Navigating through the Project:
