@@ -19,8 +19,6 @@ var render = data => {
         .key(colorValue)
         .entries(data);
 
-    console.log(nested); //Error: <path> attribute d: Expected number, "MNaN,800LNaN,800"
-
     //Color scale
     var colorScale = d3.scaleOrdinal()
         .domain(nested.map(colorValue))
@@ -115,8 +113,6 @@ var render = data => {
     svg.append("g")
         .attr("transform", "translate(1050, 100)")
         .call(legend);
-
-    ////////////////// Bisect Line //////////////////////////
 
 };
 
