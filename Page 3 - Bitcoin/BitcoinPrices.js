@@ -53,42 +53,6 @@ var render = data => {
         .attr('class', 'line-path')
         .attr('d', lineGenerator(data));
 
-    /////////////////////////////////////////////////////////////////////////////////////// ZOOOOOOOOOOOOOOOOOM ///////////////////////////////////////////////////////////////
-/*    var x_axis = g.append("g")
-        .attr("class", "axis axis--x")
-        .attr("id", 'x_axis')
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(xScale));
-
-    var bottomAxis = d3.axisBottom(xScale).ticks(width / 80).tickSizeOuter(0);
-       // Zooming into graph function
-    var zoom = d3.zoom()
-        .scaleExtent([1, 5])
-        .extent([[margin.left, 0], [width - margin.right, height]])
-        .translateExtent([[margin.left, -Infinity], [width - margin.right, Infinity]])
-        .on("zoom", zoomed);
-
-    function zoomed(event,d) {
-        var t = event.transform,
-            xt = t.rescaleX(xScale);
-
-        var zoomedLine = lineGenerator.x(function (d) {
-            return xt(d.dater);
-        });
-
-        d3.selectAll("line-path")
-            .attr("d", d => zoomedLine(d.closingprice))
-
-        d3.select("#x_axis")
-            .call(bottomAxis.scale(xt))
-    }
-
-    svg.call(zoom)
-        .transition()
-        .duration(100)
-        .call(zoom.scaleTo, 1, [xScale(Date.UTC(2017, 1, 1)), 0]);*/
-
-    ///////////////////////////////Moving along the axis //////////////////////////////////////////////////////
     var bisect = d3.bisector(function (d) { return d.dater; }).right;
 
     // Create the circle that travels along the curve of chart
