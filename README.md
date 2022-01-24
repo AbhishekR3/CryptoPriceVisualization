@@ -2,6 +2,8 @@ Title: History of the Price of Cryptocurrency Visualization
 
 Author: Abhishek Ramesh
 
+Project Link: https://abhishekr3.github.io/CryptoPriceVisualization/
+
 Dataset: https://www.coindesk.com/coindesk20
 
 Description: The project discusses about cryptocurrency prices and what might affect them. The visualizations show comparisons between prices of cryptocurrencies, networks used by the cryptocurrencies, history of Bitcoin, and cryptocurrencies as a method of investment.
